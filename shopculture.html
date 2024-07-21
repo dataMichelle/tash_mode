@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture - tash.mode</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .content {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-description {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="logo">TM</a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="shoptash.html">Shop</a>
+        <div class="dropdown-content">
+          <a href="shoptash.html">tash.mode</a>
+          <a href="shopculture.html">by culture</a>
+          <a href="shopcat.html">by category</a>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="search" placeholder="Search" aria-label="Search">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Shop by culture</h1>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 1">
+        <div class="card-description">Description for Culture 1</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 2">
+        <div class="card-description">Description for Culture 2</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 3">
+        <div class="card-description">Description for Culture 3</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 4">
+        <div class="card-description">Description for Culture 4</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 5">
+        <div class="card-description">Description for Culture 5</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 6">
+        <div class="card-description">Description for Culture 6</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 7">
+        <div class="card-description">Description for Culture 7</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Culture 8">
+        <div class="card-description">Description for Culture 8</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

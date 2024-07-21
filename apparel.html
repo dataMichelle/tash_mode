@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparel - tash.mode</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f9fa;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input[type="search"] {
+      padding: 5px;
+      font-size: 16px;
+    }
+    .search-bar button {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .content {
+      margin-top: 80px;
+      width: 100%;
+      text-align: center;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+      color: black;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #007bff;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-body h5 {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="logo">TM</a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="shoptash.html">Shop</a>
+        <div class="dropdown-content">
+          <a href="shoptash.html">tash.mode</a>
+          <a href="shopculture.html">by culture</a>
+          <a href="shopcat.html">by category</a>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="search" placeholder="Search" aria-label="Search">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Shop Apparel</h1>
+    <div class="product-grid">
+      <a href="product1.html" class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <div class="card-body">
+          <h5>Product 1</h5>
+          <p>Description of Product 1</p>
+        </div>
+      </a>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <div class="card-body">
+          <h5>Product 2</h5>
+          <p>Description of Product 2</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <div class="card-body">
+          <h5>Product 3</h5>
+          <p>Description of Product 3</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 4">
+        <div class="card-body">
+          <h5>Product 4</h5>
+          <p>Description of Product 4</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 5">
+        <div class="card-body">
+          <h5>Product 5</h5>
+          <p>Description of Product 5</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 6">
+        <div class="card-body">
+          <h5>Product 6</h5>
+          <p>Description of Product 6</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 7">
+        <div class="card-body">
+          <h5>Product 7</h5>
+          <p>Description of Product 7</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 8">
+        <div class="card-body">
+          <h5>Product 8</h5>
+          <p>Description of Product 8</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 9">
+        <div class="card-body">
+          <h5>Product 9</h5>
+          <p>Description of Product 9</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 10">
+        <div class="card-body">
+          <h5>Product 10</h5>
+          <p>Description of Product 10</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 11">
+        <div class="card-body">
+          <h5>Product 11</h5>
+          <p>Description of Product 11</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 12">
+        <div class="card-body">
+          <h5>Product 12</h5>
+          <p>Description of Product 12</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 13">
+        <div class="card-body">
+          <h5>Product 13</h5>
+          <p>Description of Product 13</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 14">
+        <div class="card-body">
+          <h5>Product 14</h5>
+          <p>Description of Product 14</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 15">
+        <div class="card-body">
+          <h5>Product 15</h5>
+          <p>Description of Product 15</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 16">
+        <div class="card-body">
+          <h5>Product 16</h5>
+          <p>Description of Product 16</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

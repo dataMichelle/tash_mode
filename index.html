@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tash.mode</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 auto 10px;
+    }
+    .search-bar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input[type="search"] {
+      padding: 5px;
+      font-size: 16px;
+    }
+    .search-bar button {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+      color: black;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #007bff;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-body {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-bar">
+    <input type="search" placeholder="Search" aria-label="Search">
+    <button type="submit">Search</button>
+  </div>
+
+  <div class="hero">
+    <div class="logo">TM</div>
+    <h1 class="mt-3">tash.mode</h1>
+    <p class="lead">Slogan</p>
+  </div>
+
+  <div class="cards-container">
+    <a href="about.html" class="card">
+      <img src="https://via.placeholder.com/150" alt="About tash.mode">
+      <div class="card-body">
+        <h5 class="card-title">About tash.mode</h5>
+        <p class="card-text">Learn more about our brand and what we stand for.</p>
+      </div>
+    </a>
+    <a href="shoptash.html" class="card">
+      <img src="https://via.placeholder.com/150" alt="Shop tash.mode products">
+      <div class="card-body">
+        <h5 class="card-title">Shop tash.mode products</h5>
+        <p class="card-text">Browse our wide range of products.</p>
+      </div>
+    </a>
+    <a href="shopculture.html" class="card">
+      <img src="https://via.placeholder.com/150" alt="Shop by culture">
+      <div class="card-body">
+        <h5 class="card-title">Shop by culture</h5>
+        <p class="card-text">Explore products based on different cultures.</p>
+      </div>
+    </a>
+    <a href="shopcat.html" class="card">
+      <img src="https://via.placeholder.com/150" alt="Shop by product category">
+      <div class="card-body">
+        <h5 class="card-title">Shop by product category</h5>
+        <p class="card-text">Find products by category for easier shopping.</p>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
